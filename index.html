@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Peace of Mind</title>
+    
+    <!-- Meta tags pour PWA sur iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Peace of Mind">
+    
+    <!-- Icône pour l'écran d'accueil iOS -->
+    <link rel="apple-touch-icon" href="data:image/png;base64,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BIAAEQAIBIAAEgAAQQAIIAAEgAASAABJAAAgAASAABJAAAkAACAABIAAEkAACQAAIAAEgABJADQgAASAABIAAAgSAABAAAkAACCCBBBAAAkAACAABJIAAEAACQAAIAAEkkABqQAAIAAEgAASQQA0IAAEgAASAABJIAAEgAASAABJIADUgAASAABAAAkigBgSAABAAAkAACdSAABAAAkAACCCBBBAAAkAACAABJFADAkAACAABIIAEakAACAABIAAEkEANCAABIAAEgAASqAEBIAAEgAAQQAI1IAAEgAAQAAJIoAYEgAAQAAJAAAkkgAAQAAJAAAgggRoQAAJAAAjgCyVQAwJAAAgAASCABHNCAAgAASAABJBADQgAASAABIAAakAACAABJIAAEAACQAAJBIAAEAACQAAJqAEBpN2Qk7fuxDqnT9++e3Hs+5AAyEH1ONr++uff948fVXGwW5TF/aVm0ymCBECmdZ+I4/3f337dvLu12Wy8cYogAZCposu7quu6RRdlcafZbD40nCJIAOQqyU5RFGVZtJ4vDEgA/EeKODstyg+LOJWLuygWF1vJAcLCSDIrHzSef9vcuN96/lMR51GfwGK9nqevZMYaAKA+AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4At5DQVdS/fZwDXNAAAAAElFTkSuQmCC">
+    
+    <!-- Typographies Google Fonts modernes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --primary-gradient: linear-gradient(135deg, var(--primary), var(--primary-light));
+            --success: #10b981;
+            --success-light: #a7f3d0;
+            --text-dark: #111827;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-lg: 20px;
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #c7d2fe 0%, #e0e7ff 50%, #dbeafe 100%);
+            background-attachment: fixed;
+            position: relative;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 50% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 30%),
+                radial-gradient(circle at 90% 85%, rgba(236, 72, 153, 0.1) 0%, transparent 20%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 100%;
+            padding: 16px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            padding: 16px;
+            z-index: 10;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .app-title {
+            display: flex;
+            align-items: center;
+        }
+        
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-right: 12px;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+        
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.03em;
+            margin: 0;
+        }
+        
+        .location-selector {
+            position: relative;
+            margin-bottom: 16px;
+        }
+        
+        .location-dropdown {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: var(--radius);
+            background-color: white;
+            box-shadow: var(--shadow);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid var(--border);
+            appearance: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            color: var(--primary-dark);
+        }
+        
+        .location-dropdown:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        
+        .location-dropdown-wrapper {
+            position: relative;
+        }
+        
+        .location-dropdown-wrapper::after {
+            content: "🔽";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            pointer-events: none;
+        }
+        
+        .add-location-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 2px 5px rgba(99, 102, 241, 0.2);
+        }
+        
+        .add-location-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+        }
+        
+        .add-location-btn span {
+            margin-right: 8px;
+        }
+        
+        .progress-container {
+            margin: 0 0 24px;
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .progress-container:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .progress-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+        }
+        
+        .progress-title span {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .progress-percentage {
+            font-weight: 700;
+            color: var(--primary);
+            transition: var(--transition);
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+        }
+        
+        .progress-bar {
+            height: 12px;
+            background-color: #e5e7eb;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--primary-gradient);
+            border-radius: 6px;
+            transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-fill::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: translateX(-100%);
+            animation: shimmer 1.5s infinite;
+        }
+        
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        .section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title span {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        
+        .filters-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 8px;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        
+        .filters-scroll::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+        
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            min-width: min-content;
+        }
+        
+        .filter-button {
+            background-color: white;
+            border: 1px solid var(--border);
+            padding: 12px 18px;
+            border-radius: var(--radius-lg);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text-medium);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-button span {
+            margin-right: 8px;
+            font-size: 17px;
+        }
+        
+        .filter-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .filter-button.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+        }
+        
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 100px;
+        }
+        
+        .task-item {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-left: 4px solid var(--border);
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .task-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .task-item.completed {
+            border-left-color: var(--success);
+            background-color: #f8fffc;
+        }
+        
+        .task-checkbox {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            border: 2px solid #d1d5db;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: var(--transition);
+            background-color: white;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .task-checkbox:hover {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .task-checkbox.checked {
+            background: linear-gradient(135deg, var(--success), var(--success-light));
+            border-color: transparent;
+            box-shadow: 0 2px 5px rgba(16, 185, 129, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .checkmark {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .task-checkbox.checked .checkmark {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .task-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            margin-right: 16px;
+            flex-shrink: 0;
+            transition: var(--transition);
+            box-shadow: 0 2px 5px rgba(99, 102, 241, 0.2);
+        }
+        
+        .task-item.completed .task-icon {
+            background: linear-gradient(135deg, var(--success), var(--success-light));
+        }
+        
+        .task-content {
+            flex-grow: 1;
+        }
+        
+        .task-text {
+            font-size: 16px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .task-item.completed .task-text {
+            text-decoration: line-through;
+            color: var(--text-light);
+        }
+        
+        .task-room {
+            font-size: 13px;
+            background-color: #f1f5f9;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 6px;
+            display: inline-block;
+            font-weight: 600;
+            color: var(--text-medium);
+            transition: var(--transition);
+        }
+        
+        .task-item.completed .task-room {
+            background-color: var(--success-light);
+            color: var(--success);
+        }
+        
+        .task-delete {
+            color: #ef4444;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 1;
+            margin-left: 8px;
+            transition: var(--transition);
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .task-delete:hover {
+            background-color: rgba(239, 68, 68, 0.1);
+            transform: rotate(90deg);
+            opacity: 1;
+        }
+        
+        .floating-button {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            background: var(--primary-gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            border: none;
+            cursor: pointer;
+            font-size: 32px;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .floating-button:hover, .floating-button:active {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+        }
+        
+        .floating-button::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: inherit;
+            opacity: 0;
+            z-index: -1;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .reset-button {
+            position: fixed;
+            bottom: 28px;
+            left: 28px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            display: none;
+            transition: var(--transition);
+            z-index: 100;
+            backdrop-filter: blur(4px);
+        }
+        
+        .reset-button span {
+            margin-right: 6px;
+        }
+        
+        .reset-button:hover, .reset-button:active {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            padding: 16px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+        }
+        
+        .modal-content {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 28px;
+            width: 100%;
+            max-width: 90%;
+            transform: translateY(20px);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+        }
+        
+        .modal-title span {
+            margin-right: 14px;
+            font-size: 26px;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-medium);
+        }
+        
+        .form-input, .form-select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            transition: var(--transition);
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        
+        .form-select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+            padding-right: 40px;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 28px;
+        }
+        
+        .button {
+            padding: 14px 22px;
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .button-secondary {
+            background-color: white;
+            color: var(--text-dark);
+            border: 1px solid var(--border);
+        }
+        
+        .button-secondary:hover, .button-secondary:active {
+            background-color: #f8fafc;
+        }
+        
+        .button-primary {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+        }
+        
+        .button-primary:hover, .button-primary:active {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(99, 102, 241, 0.3);
+        }
+        
+        .button-danger {
+            background: linear-gradient(135deg, #ef4444, #f87171);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);
+        }
+        
+        .button-danger:hover, .button-danger:active {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(239, 68, 68, 0.3);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        
+        .empty-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .empty-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+        
+        .empty-text {
+            color: var(--text-medium);
+            max-width: 300px;
+            margin: 0 auto;
+            font-size: 15px;
+        }
+        
+        .bubble {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.7), rgba(129, 140, 248, 0.3));
+            pointer-events: none;
+            animation: bubblePop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            z-index: 1000;
+        }
+        
+        @keyframes bubblePop {
+            0% { transform: scale(0); opacity: 0.9; }
+            70% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        
+        .confetti {
+            position: fixed;
+            z-index: 1000;
+            width: 10px;
+            height: 10px;
+            border-radius: 4px;
+            pointer-events: none;
+            animation: confettiFall 3s linear forwards;
+        }
+        
+        @keyframes confettiFall {
+            0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        
+        .task-enter {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .task-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 500ms, transform 500ms;
+        }
+        
+        .task-exit {
+            opacity: 1;
+        }
+        
+        .task-exit-active {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 500ms, transform 500ms;
+        }
+        
+        @keyframes taskComplete {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .task-complete-animation {
+            animation: taskComplete 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        @keyframes titleGlow {
+            0% { text-shadow: 0 0 5px rgba(99, 102, 241, 0); }
+            50% { text-shadow: 0 0 15px rgba(99, 102, 241, 0.5); }
+            100% { text-shadow: 0 0 5px rgba(99, 102, 241, 0); }
+        }
+        
+        .title-animation {
+            animation: titleGlow 3s infinite ease-in-out;
+        }
+        
+        /* Optimisations mobiles supplémentaires */
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 12px;
+            }
+            
+            header {
+                padding: 16px 12px;
+            }
+            
+            .app-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 22px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .progress-container, 
+            .task-item {
+                padding: 16px 14px;
+            }
+            
+            .button {
+                padding: 12px 16px;
+            }
+            
+            .filter-button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            
+            .task-text {
+                font-size: 15px;
+            }
+            
+            .floating-button {
+                width: 58px;
+                height: 58px;
+                bottom: 24px;
+                right: 24px;
+            }
+            
+            .reset-button {
+                bottom: 24px;
+                left: 24px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-title">
+            <div class="app-icon">
+                😌
+            </div>
+            <h1 class="title-animation">Peace of Mind</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="location-selector">
+            <div class="location-dropdown-wrapper">
+                <select id="locationSelect" class="location-dropdown">
+                    <!-- Options will be added dynamically -->
+                </select>
+            </div>
+            <button id="addLocationButton" class="add-location-btn">
+                <span>➕</span> Ajouter un lieu
+            </button>
+        </div>
+        
+        <div class="progress-container">
+            <h2 class="progress-title">
+                <span>📊</span>
+                Votre progression
+            </h2>
+            <div class="progress-info">
+                <span>Vérifications complétées</span>
+                <span id="progressPercentage" class="progress-percentage">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span>🏠</span>
+                Pièces
+            </h2>
+            <div class="filters-scroll">
+                <div id="roomFilters" class="filters">
+                    <!-- Room filters will be added dynamically -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="taskList" class="task-list">
+            <!-- Les tâches seront ajoutées ici dynamiquement -->
+        </div>
+        
+        <button id="addTaskButton" class="floating-button">
+            ➕
+        </button>
+        
+        <button id="resetButton" class="reset-button">
+            <span>🔄</span>
+            Réinitialiser
+        </button>
+    </div>
+    
+    <!-- Modal d'ajout de tâche -->
+    <div id="addTaskModal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title">
+                <span>📝</span>
+                Ajouter une vérification
+            </h3>
+            
+            <div class="form-group">
+                <label class="form-label">Qu'avez-vous besoin de vérifier?</label>
+                <input id="newTaskInput" class="form-input" type="text" placeholder="Ex: Porte fermée à clé">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Pièce</label>
+                <select id="roomSelect" class="form-select">
+                    <!-- Options will be added dynamically -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Icône</label>
+                <select id="iconSelect" class="form-select">
+                    <option value="🚪">🚪 Porte</option>
+                    <option value="🔑">🔑 Clés</option>
+                    <option value="💡">💡 Lumière</option>
+                    <option value="🔥">🔥 Plaques/Chauffage</option>
+                    <option value="🚿">🚿 Robinet</option>
+                    <option value="🪟">🪟 Fenêtre</option>
+                    <option value="🔌">🔌 Prises</option>
+                    <option value="🔒">🔒 Serrure</option>
+                    <option value="📺">📺 Télévision</option>
+                    <option value="🍽️">🍽️ Cuisine</option>
+                    <option value="👕">👕 Vêtements</option>
+                    <option value="📱">📱 Téléphone</option>
+                    <option value="👝">👝 Portefeuille</option>
+                    <option value="💻">💻 Ordinateur</option>
+                    <option value="🧹">🧹 Nettoyage</option>
+                </select>
+            </div>
+            
+            <div class="button-group">
+                <button id="cancelAddTask" class="button button-secondary">Annuler</button>
+                <button id="saveTaskButton" class="button button-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal d'ajout de pièce -->
+    <div id="addRoomModal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title">
+                <span>🏠</span>
+                Ajouter une pièce
+            </h3>
+            
+            <div class="form-group">
+                <label class="form-label">Nom de la pièce</label>
+                <input id="newRoomInput" class="form-input" type="text" placeholder="Ex: Bureau, Balcon, Garage...">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Icône</label>
+                <select id="roomIconSelect" class="form-select">
+                    <option value="🚪">🚪 Entrée</option>
+                    <option value="🛋️">🛋️ Salon</option>
+                    <option value="🍳">🍳 Cuisine</option>
+                    <option value="🛏️">🛏️ Chambre</option>
+                    <option value="🚿">🚿 Salle de bain</option>
+                    <option value="💼">💼 Bureau</option>
+                    <option value="🚗">🚗 Garage</option>
+                    <option value="🌳">🌳 Jardin</option>
+                    <option value="🍽️">🍽️ Salle à manger</option>
+                    <option value="☀️">☀️ Balcon/Terrasse</option>
+                    <option value="📦">📦 Rangement</option>
+                    <option value="🎮">🎮 Salle de jeux</option>
+                    <option value="🏋️">🏋️ Salle de sport</option>
+                </select>
+            </div>
+            
+            <div class="button-group">
+                <button id="cancelAddRoom" class="button button-secondary">Annuler</button>
+                <button id="saveRoomButton" class="button button-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal d'ajout de lieu -->
+    <div id="addLocationModal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title">
+                <span>🌍</span>
+                Ajouter un lieu
+            </h3>
+            
+            <div class="form-group">
+                <label class="form-label">Nom du lieu</label>
+                <input id="newLocationInput" class="form-input" type="text" placeholder="Ex: Maison, Bureau, Résidence secondaire...">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Icône</label>
+                <select id="locationIconSelect" class="form-select">
+                    <option value="🏠">🏠 Maison</option>
+                    <option value="🏢">🏢 Bureau</option>
+                    <option value="🏫">🏫 École</option>
+                    <option value="🏘️">🏘️ Résidence secondaire</option>
+                    <option value="🏕️">🏕️ Camping/Vacances</option>
+                    <option value="🏪">🏪 Commerce</option>
+                    <option value="🏋️">🏋️ Salle de sport</option>
+                    <option value="🚗">🚗 Voiture</option>
+                    <option value="🏡">🏡 Jardin</option>
+                </select>
+            </div>
+            
+            <div class="button-group">
+                <button id="cancelAddLocation" class="button button-secondary">Annuler</button>
+                <button id="saveLocationButton" class="button button-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de gestion des lieux -->
+    <div id="manageLocationsModal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title">
+                <span>🌍</span>
+                Gestion des lieux
+            </h3>
+            
+            <div id="locationsList" class="form-group">
+                <!-- Locations will be listed here -->
+            </div>
+            
+            <div class="button-group">
+                <button id="addNewLocationBtn" class="button button-primary">
+                    <span>➕</span> Nouveau lieu
+                </button>
+                <button id="closeManageLocations" class="button button-secondary">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Éléments DOM
+        const taskList = document.getElementById('taskList');
+        const progressFill = document.getElementById('progressFill');
+        const progressPercentage = document.getElementById('progressPercentage');
+        const resetButton = document.getElementById('resetButton');
+        const addTaskButton = document.getElementById('addTaskButton');
+        const addTaskModal = document.getElementById('addTaskModal');
+        const cancelAddTask = document.getElementById('cancelAddTask');
+        const saveTaskButton = document.getElementById('saveTaskButton');
+        const newTaskInput = document.getElementById('newTaskInput');
+        const roomSelect = document.getElementById('roomSelect');
+        const iconSelect = document.getElementById('iconSelect');
+        const roomFilters = document.getElementById('roomFilters');
+        const addRoomModal = document.getElementById('addRoomModal');
+        const newRoomInput = document.getElementById('newRoomInput');
+        const roomIconSelect = document.getElementById('roomIconSelect');
+        const cancelAddRoom = document.getElementById('cancelAddRoom');
+        const saveRoomButton = document.getElementById('saveRoomButton');
+        const locationSelect = document.getElementById('locationSelect');
+        const addLocationButton = document.getElementById('addLocationButton');
+        const addLocationModal = document.getElementById('addLocationModal');
+        const newLocationInput = document.getElementById('newLocationInput');
+        const locationIconSelect = document.getElementById('locationIconSelect');
+        const saveLocationButton = document.getElementById('saveLocationButton');
+        const cancelAddLocation = document.getElementById('cancelAddLocation');
+        const manageLocationsModal = document.getElementById('manageLocationsModal');
+        const locationsList = document.getElementById('locationsList');
+        const addNewLocationBtn = document.getElementById('addNewLocationBtn');
+        const closeManageLocations = document.getElementById('closeManageLocations');
+
+        // Correspondance entre les vérifications et les émojis
+        const emojiMapping = {
+            "porte": "🚪",
+            "fenêtre": "🪟",
+            "fenetre": "🪟",
+            "plaques": "🔥",
+            "chauffage": "🔥",
+            "gaz": "🔥",
+            "lumière": "💡",
+            "lumiere": "💡",
+            "clé": "🔑",
+            "clés": "🔑",
+            "cles": "🔑",
+            "robinet": "🚿",
+            "eau": "🚿",
+            "prise": "🔌",
+            "électrique": "🔌",
+            "electrique": "🔌",
+            "serrure": "🔒",
+            "télé": "📺",
+            "tele": "📺",
+            "téléviseur": "📺",
+            "televiseur": "📺",
+            "téléphone": "📱",
+            "telephone": "📱",
+            "portable": "📱",
+            "ordinateur": "💻",
+            "ordi": "💻",
+            "pc": "💻",
+            "portefeuille": "👝",
+            "argent": "👝",
+            "vêtement": "👕",
+            "vetement": "👕",
+            "vêtements": "👕",
+            "vetements": "👕"
+        };
+
+        // État de l'application avec multiples lieux
+        let state = {
+            currentLocationId: "home",
+            locations: {
+                "home": {
+                    id: "home",
+                    name: "Maison",
+                    icon: "🏠",
+                    tasks: [
+                        { id: 1, text: "Porte d'entrée fermée à clé", completed: false, room: "entrée", icon: "🔒" },
+                        { id: 2, text: "Fenêtres fermées", completed: false, room: "salon", icon: "🪟" },
+                        { id: 3, text: "Plaques de cuisson éteintes", completed: false, room: "cuisine", icon: "🔥" },
+                        { id: 4, text: "Lumières éteintes", completed: false, room: "chambre", icon: "💡" },
+                        { id: 5, text: "Robinets fermés", completed: false, room: "salle de bain", icon: "🚿" }
+                    ],
+                    rooms: ["entrée", "salon", "cuisine", "chambre", "salle de bain"],
+                    roomIcons: {
+                        "entrée": "🚪",
+                        "salon": "🛋️",
+                        "cuisine": "🍳",
+                        "chambre": "🛏️",
+                        "salle de bain": "🚿"
+                    },
+                    currentRoom: "toutes"
+                },
+                "work": {
+                    id: "work",
+                    name: "Bureau",
+                    icon: "🏢",
+                    tasks: [
+                        { id: 1, text: "Écran d'ordinateur éteint", completed: false, room: "bureau", icon: "💻" },
+                        { id: 2, text: "Documents rangés", completed: false, room: "bureau", icon: "📁" },
+                        { id: 3, text: "Porte fermée à clé", completed: false, room: "bureau", icon: "🔒" }
+                    ],
+                    rooms: ["bureau", "salle de réunion", "réception"],
+                    roomIcons: {
+                        "bureau": "💼",
+                        "salle de réunion": "👥",
+                        "réception": "🖥️"
+                    },
+                    currentRoom: "toutes"
+                }
+            }
+        };
+
+        // Obtenir l'emplacement actuel
+        function getCurrentLocation() {
+            return state.locations[state.currentLocationId];
+        }
+
+        // Essayer de charger l'état depuis le stockage local
+        try {
+            const savedState = localStorage.getItem('peaceOfMindState');
+            if (savedState) {
+                state = JSON.parse(savedState);
+            }
+        } catch (e) {
+            console.log('Erreur lors du chargement des données:', e);
+        }
+
+        // Mettre à jour les sélecteurs de lieu
+        function updateLocationSelectors() {
+            // Mettre à jour le dropdown principal
+            locationSelect.innerHTML = '';
+            
+            Object.values(state.locations).forEach(location => {
+                const option = document.createElement('option');
+                option.value = location.id;
+                option.textContent = `${location.icon} ${location.name}`;
+                option.selected = location.id === state.currentLocationId;
+                locationSelect.appendChild(option);
+            });
+            
+            // Ajouter une option "Gérer les lieux"
+            const manageOption = document.createElement('option');
+            manageOption.value = "manage";
+            manageOption.textContent = "⚙️ Gérer les lieux";
+            locationSelect.appendChild(manageOption);
+        }
+
+        // Mettre à jour la liste des lieux dans la modal de gestion
+        function updateLocationsList() {
+            locationsList.innerHTML = '';
+            
+            Object.values(state.locations).forEach(location => {
+                const locationItem = document.createElement('div');
+                locationItem.className = 'form-group';
+                locationItem.style.display = 'flex';
+                locationItem.style.alignItems = 'center';
+                locationItem.style.justifyContent = 'space-between';
+                locationItem.style.padding = '12px';
+                locationItem.style.border = '1px solid var(--border)';
+                locationItem.style.borderRadius = 'var(--radius-sm)';
+                locationItem.style.marginBottom = '10px';
+                
+                locationItem.innerHTML = `
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-size: 24px; margin-right: 10px;">${location.icon}</span>
+                        <span style="font-weight: 600;">${location.name}</span>
+                    </div>
+                    <div>
+                        <button class="button button-secondary location-edit" data-id="${location.id}" style="padding: 8px 12px; margin-right: 8px;">✏️</button>
+                        <button class="button button-danger location-delete" data-id="${location.id}" style="padding: 8px 12px;" ${Object.keys(state.locations).length <= 1 ? 'disabled' : ''}>❌</button>
+                    </div>
+                `;
+                
+                locationsList.appendChild(locationItem);
+            });
+            
+            // Ajouter les écouteurs d'événements pour les boutons
+            document.querySelectorAll('.location-edit').forEach(button => {
+                button.addEventListener('click', function() {
+                    const locationId = this.getAttribute('data-id');
+                    editLocation(locationId);
+                });
+            });
+            
+            document.querySelectorAll('.location-delete').forEach(button => {
+                button.addEventListener('click', function() {
+                    const locationId = this.getAttribute('data-id');
+                    deleteLocation(locationId);
+                });
+            });
+        }
+
+        // Éditer un lieu
+        function editLocation(locationId) {
+            const location = state.locations[locationId];
+            
+            // Remplir le formulaire
+            newLocationInput.value = location.name;
+            locationIconSelect.value = location.icon;
+            
+            // Ouvrir la modal en mode édition
+            openAddLocationModal(locationId);
+        }
+
+        // Supprimer un lieu
+        function deleteLocation(locationId) {
+            // Ne pas supprimer le dernier lieu
+            if (Object.keys(state.locations).length <= 1) {
+                return;
+            }
+            
+            // Confirmer la suppression
+            if (confirm(`Êtes-vous sûr de vouloir supprimer le lieu "${state.locations[locationId].name}" et toutes ses vérifications?`)) {
+                // Supprimer le lieu
+                delete state.locations[locationId];
+                
+                // Si c'était le lieu actuel, changer pour un autre
+                if (state.currentLocationId === locationId) {
+                    state.currentLocationId = Object.keys(state.locations)[0];
+                }
+                
+                // Mettre à jour l'interface
+                updateLocationSelectors();
+                updateLocationsList();
+                saveState();
+                loadCurrentLocation();
+            }
+        }
+
+        // Mettre à jour la liste déroulante des pièces
+        function updateRoomSelect() {
+            const location = getCurrentLocation();
+            
+            roomSelect.innerHTML = '';
+            location.rooms.forEach(room => {
+                const option = document.createElement('option');
+                option.value = room;
+                option.textContent = `${location.roomIcons[room] || "🏠"} ${room.charAt(0).toUpperCase() + room.slice(1)}`;
+                roomSelect.appendChild(option);
+            });
+        }
+        
+        // Mettre à jour les boutons de filtre de pièces
+        function updateRoomFilters() {
+            const location = getCurrentLocation();
+            
+            // Vider les filtres
+            roomFilters.innerHTML = '';
+            
+            // Ajouter le bouton "Toutes"
+            const allButton = document.createElement('button');
+            allButton.className = `filter-button ${location.currentRoom === 'toutes' ? 'active' : ''}`;
+            allButton.setAttribute('data-room', 'toutes');
+            allButton.innerHTML = `<span>🔍</span> Toutes`;
+            allButton.addEventListener('click', function() {
+                filterByRoom('toutes');
+            });
+            roomFilters.appendChild(allButton);
+            
+            // Ajouter les boutons pour chaque pièce
+            location.rooms.forEach(room => {
+                const button = document.createElement('button');
+                button.className = `filter-button ${location.currentRoom === room ? 'active' : ''}`;
+                button.setAttribute('data-room', room);
+                
+                // Ajouter l'emoji de la pièce
+                const emoji = location.roomIcons[room] || "🏠";
+                button.innerHTML = `<span>${emoji}</span> ${room.charAt(0).toUpperCase() + room.slice(1)}`;
+                
+                // Ajouter l'écouteur d'événement
+                button.addEventListener('click', function() {
+                    filterByRoom(room);
+                });
+                
+                roomFilters.appendChild(button);
+            });
+            
+            // Ajouter le bouton d'ajout de pièce
+            const addButton = document.createElement('button');
+            addButton.id = 'addRoomButton';
+            addButton.className = 'filter-button';
+            addButton.style.background = 'linear-gradient(135deg, var(--primary-light), var(--primary))';
+            addButton.style.color = 'white';
+            addButton.innerHTML = `<span>➕</span> Ajouter`;
+            addButton.addEventListener('click', openRoomModal);
+            roomFilters.appendChild(addButton);
+        }
+
+        // Mettre à jour la barre de progression
+        function updateProgress() {
+            const location = getCurrentLocation();
+            const completedTasks = location.tasks.filter(task => task.completed).length;
+            const totalTasks = location.tasks.length;
+            const percentage = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
+            
+            // Animation de la progression
+            progressFill.style.width = `${percentage}%`;
+            progressPercentage.textContent = `${percentage}%`;
+            
+            // Mettre à jour la couleur du pourcentage en fonction de la progression
+            if (percentage < 30) {
+                progressPercentage.style.color = 'var(--primary)';
+            } else if (percentage < 70) {
+                progressPercentage.style.color = '#8b5cf6';
+            } else {
+                progressPercentage.style.color = 'var(--success)';
+            }
+            
+            resetButton.style.display = completedTasks > 0 ? 'block' : 'none';
+            
+            // Vérifier si toutes les tâches sont terminées
+            if (percentage === 100 && totalTasks > 0) {
+                setTimeout(() => {
+                    playConfetti();
+                }, 300);
+            }
+        }
+
+        // Trouver un emoji approprié pour une tâche
+        function findAppropriateEmoji(text) {
+            const textLower = text.toLowerCase();
+            
+            // Parcourir les mots-clés et trouver une correspondance
+            for (const keyword in emojiMapping) {
+                if (textLower.includes(keyword)) {
+                    return emojiMapping[keyword];
+                }
+            }
+            
+            // Emoji par défaut en fonction de la pièce
+            const room = roomSelect.value;
+            const location = getCurrentLocation();
+            if (room && location.roomIcons[room]) {
+                return location.roomIcons[room];
+            }
+            
+            return "✅"; // Emoji par défaut
+        }
+
+        // Afficher les tâches filtrées
+        function renderTasks() {
+            const location = getCurrentLocation();
+            
+            // Filtrer les tâches par pièce
+            const filteredTasks = location.currentRoom === 'toutes' 
+                ? location.tasks 
+                : location.tasks.filter(task => task.room === location.currentRoom);
+            
+            // Vider la liste
+            taskList.innerHTML = '';
+            
+            // Afficher un message si aucune tâche
+            if (filteredTasks.length === 0) {
+                taskList.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">📋</div>
+                        <h3 class="empty-title">Aucune vérification</h3>
+                        <p class="empty-text">Ajoutez des vérifications pour cette pièce en cliquant sur le bouton +</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Ajouter chaque tâche à la liste avec un délai pour l'animation
+            filteredTasks.forEach((task, index) => {
+                setTimeout(() => {
+                    const taskItem = document.createElement('div');
+                    taskItem.className = `task-item ${task.completed ? 'completed' : ''}`;
+                    taskItem.id = `task-${task.id}`;
+                    
+                    taskItem.innerHTML = `
+                        <div class="task-checkbox ${task.completed ? 'checked' : ''}" onclick="toggleTask(${task.id})">
+                            <span class="checkmark">✓</span>
+                        </div>
+                        <div class="task-icon">
+                            ${task.icon || "✅"}
+                        </div>
+                        <div class="task-content">
+                            <div class="task-text">${task.text}</div>
+                            <div class="task-room">
+                                ${location.roomIcons[task.room] || "🏠"} ${task.room}
+                            </div>
+                        </div>
+                        <button class="task-delete" onclick="deleteTask(${task.id})">
+                            ❌
+                        </button>
+                    `;
+                    
+                    taskList.appendChild(taskItem);
+                }, index * 100); // Ajouter un délai croissant pour chaque tâche
+            });
+        }
+
+        // Cocher/décocher une tâche
+        function toggleTask(id) {
+            const location = getCurrentLocation();
+            const task = location.tasks.find(t => t.id === id);
+            
+            if (task) {
+                task.completed = !task.completed;
+                
+                const taskItem = document.getElementById(`task-${id}`);
+                if (taskItem) {
+                    if (task.completed) {
+                        taskItem.classList.add('completed', 'task-complete-animation');
+                        taskItem.querySelector('.task-checkbox').classList.add('checked');
+                        createBubbleEffect(taskItem);
+                        playCompleteSound();
+                        
+                        // Retirer la classe d'animation après qu'elle soit terminée
+                        setTimeout(() => {
+                            taskItem.classList.remove('task-complete-animation');
+                        }, 500);
+                    } else {
+                        taskItem.classList.remove('completed');
+                        taskItem.querySelector('.task-checkbox').classList.remove('checked');
+                    }
+                }
+                
+                saveState();
+                updateProgress();
+            }
+        }
+
+        // Supprimer une tâche
+        function deleteTask(id) {
+            const location = getCurrentLocation();
+            const taskItem = document.getElementById(`task-${id}`);
+            
+            if (taskItem) {
+                // Animation de suppression
+                taskItem.style.transform = 'translateX(50px)';
+                taskItem.style.opacity = '0';
+                
+                setTimeout(() => {
+                    location.tasks = location.tasks.filter(t => t.id !== id);
+                    saveState();
+                    renderTasks();
+                    updateProgress();
+                }, 300);
+            }
+        }
+
+        // Réinitialiser toutes les tâches
+        function resetTasks() {
+            const location = getCurrentLocation();
+            
+            // Animation du bouton
+            resetButton.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                resetButton.style.transform = '';
+            }, 200);
+            
+            location.tasks = location.tasks.map(task => ({...task, completed: false}));
+            saveState();
+            renderTasks();
+            updateProgress();
+            
+            // Ajouter une animation de "secousse" à la liste des tâches
+            taskList.style.animation = 'none';
+            setTimeout(() => {
+                taskList.style.animation = 'shake 0.5s cubic-bezier(.36,.07,.19,.97) both';
+            }, 10);
+            setTimeout(() => {
+                taskList.style.animation = '';
+            }, 510);
+        }
+
+        // Filtrer par pièce
+        function filterByRoom(room) {
+            const location = getCurrentLocation();
+            location.currentRoom = room;
+            
+            // Mettre à jour les boutons de filtre
+            document.querySelectorAll('#roomFilters .filter-button').forEach(button => {
+                if (button.getAttribute('data-room') === room) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+            
+            saveState();
+            renderTasks();
+        }
+
+        // Ajouter une nouvelle tâche
+        function addTask() {
+            const location = getCurrentLocation();
+            const text = newTaskInput.value.trim();
+            const room = roomSelect.value;
+            const icon = iconSelect.value || findAppropriateEmoji(text);
+            
+            if (text) {
+                const newTask = {
+                    id: Date.now(),
+                    text: text,
+                    completed: false,
+                    room: room,
+                    icon: icon
+                };
+                
+                location.tasks.push(newTask);
+                closeModal();
+                newTaskInput.value = '';
+                
+                saveState();
+                renderTasks();
+                updateProgress();
+                
+                // Animation du bouton d'ajout
+                addTaskButton.style.transform = 'rotate(45deg)';
+                setTimeout(() => {
+                    addTaskButton.style.transform = '';
+                }, 300);
+            }
+        }
+
+        // Ajouter une nouvelle pièce
+        function addRoom() {
+            const location = getCurrentLocation();
+            const roomName = newRoomInput.value.trim().toLowerCase();
+            const roomIcon = roomIconSelect.value;
+            
+            if (roomName && !location.rooms.includes(roomName)) {
+                // Ajouter la pièce à la liste
+                location.rooms.push(roomName);
+                
+                // Ajouter l'icône de la pièce
+                location.roomIcons[roomName] = roomIcon;
+                
+                // Fermer la modal
+                closeRoomModal();
+                
+                // Mettre à jour l'interface
+                updateRoomFilters();
+                updateRoomSelect();
+                
+                // Sauvegarder l'état
+                saveState();
+                
+                // Animation de succès
+                const addRoomButton = document.getElementById('addRoomButton');
+                if (addRoomButton) {
+                    addRoomButton.classList.add('task-complete-animation');
+                    setTimeout(() => {
+                        addRoomButton.classList.remove('task-complete-animation');
+                    }, 500);
+                }
+            }
+        }
+
+        // Ajouter un nouveau lieu
+        function addLocation(editId = null) {
+            const locationName = newLocationInput.value.trim();
+            const locationIcon = locationIconSelect.value;
+            
+            if (locationName) {
+                if (editId) {
+                    // Mode édition
+                    const location = state.locations[editId];
+                    location.name = locationName;
+                    location.icon = locationIcon;
+                } else {
+                    // Mode création
+                    const locationId = 'location_' + Date.now();
+                    
+                    // Créer un nouveau lieu
+                    state.locations[locationId] = {
+                        id: locationId,
+                        name: locationName,
+                        icon: locationIcon,
+                        tasks: [],
+                        rooms: ["entrée", "salon", "cuisine", "chambre", "salle de bain"],
+                        roomIcons: {
+                            "entrée": "🚪",
+                            "salon": "🛋️",
+                            "cuisine": "🍳",
+                            "chambre": "🛏️",
+                            "salle de bain": "🚿"
+                        },
+                        currentRoom: "toutes"
+                    };
+                    
+                    // Changer vers le nouveau lieu
+                    state.currentLocationId = locationId;
+                }
+                
+                // Fermer les modals
+                closeAddLocationModal();
+                closeManageLocationsModal();
+                
+                // Mettre à jour l'interface
+                updateLocationSelectors();
+                saveState();
+                loadCurrentLocation();
+            }
+        }
+
+        // Charger le lieu actuel
+        function loadCurrentLocation() {
+            updateRoomFilters();
+            updateRoomSelect();
+            renderTasks();
+            updateProgress();
+        }
+
+        // Changer de lieu
+        function changeLocation() {
+            const selectedLocation = locationSelect.value;
+            
+            if (selectedLocation === "manage") {
+                // Ouvrir la modal de gestion
+                openManageLocationsModal();
+                
+                // Réinitialiser la valeur du select au lieu actuel
+                setTimeout(() => {
+                    locationSelect.value = state.currentLocationId;
+                }, 0);
+            } else if (selectedLocation !== state.currentLocationId) {
+                // Changer de lieu
+                state.currentLocationId = selectedLocation;
+                saveState();
+                loadCurrentLocation();
+            }
+        }
+
+        // Créer un effet de bulle
+        function createBubbleEffect(element) {
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            
+            const rect = element.getBoundingClientRect();
+            
+            bubble.style.left = `${rect.left + 30}px`;
+            bubble.style.top = `${rect.top + rect.height / 2}px`;
+            
+            document.body.appendChild(bubble);
+            
+            setTimeout(() => {
+                bubble.remove();
+            }, 600);
+        }
+
+        // Jouer l'animation de confettis
+        function playConfetti() {
+            // Jouer un son festif
+            playConfettiSound();
+            
+            // Ajouter une animation à la barre de progression
+            progressFill.style.animation = 'pulse 1s cubic-bezier(0.34, 1.56, 0.64, 1) 3';
+            setTimeout(() => {
+                progressFill.style.animation = '';
+            }, 3000);
+            
+            // Créer les confettis
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    
+                    // Couleur aléatoire vive
+                    const colors = ['#ff4d4d', '#ffad4d', '#ffff4d', '#4dff4d', '#4d4dff', '#ff4dff'];
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.backgroundColor = color;
+                    
+                    // Position aléatoire
+                    confetti.style.left = `${Math.random() * 100}vw`;
+                    confetti.style.top = `-10px`;
+                    
+                    // Taille aléatoire
+                    const size = Math.random() * 10 + 5;
+                    confetti.style.width = `${size}px`;
+                    confetti.style.height = `${size}px`;
+                    
+                    // Rotation aléatoire
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Supprimer après l'animation
+                    setTimeout(() => {
+                        confetti.remove();
+                    }, 3000);
+                }, i * 30);
+            }
+        }
+
+        // Simuler des sons avec l'API Web Audio
+        let audioContext;
+        
+        function initAudio() {
+            try {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            } catch (e) {
+                console.log('Web Audio API non supportée:', e);
+            }
+        }
+        
+        function playCompleteSound() {
+            try {
+                if (!audioContext) initAudio();
+                if (!audioContext) return; // Si l'initialisation a échoué
+                
+                const oscillator = audioContext.createOscillator();
+                const gain = audioContext.createGain();
+                
+                oscillator.type = 'sine';
+                oscillator.frequency.setValueAtTime(880, audioContext.currentTime);
+                oscillator.frequency.exponentialRampToValueAtTime(440, audioContext.currentTime + 0.2);
+                
+                gain.gain.setValueAtTime(0.5, audioContext.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+                
+                oscillator.connect(gain);
+                gain.connect(audioContext.destination);
+                
+                oscillator.start();
+                oscillator.stop(audioContext.currentTime + 0.2);
+            } catch (e) {
+                console.log('Erreur de son:', e);
+            }
+        }
+        
+        function playConfettiSound() {
+            try {
+                if (!audioContext) initAudio();
+                if (!audioContext) return; // Si l'initialisation a échoué
+                
+                // Jouer plusieurs notes pour un son festif
+                for (let i = 0; i < 5; i++) {
+                    const oscillator = audioContext.createOscillator();
+                    const gain = audioContext.createGain();
+                    
+                    const note = 440 * Math.pow(1.06, i * 2);
+                    
+                    oscillator.type = 'sine';
+                    oscillator.frequency.value = note;
+                    
+                    gain.gain.setValueAtTime(0.2, audioContext.currentTime + i * 0.1);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + i * 0.1 + 0.3);
+                    
+                    oscillator.connect(gain);
+                    gain.connect(audioContext.destination);
+                    
+                    oscillator.start(audioContext.currentTime + i * 0.1);
+                    oscillator.stop(audioContext.currentTime + i * 0.1 + 0.3);
+                }
+            } catch (e) {
+                console.log('Erreur de son:', e);
+            }
+        }
+
+        // Fonctions pour les modals
+        function openModal() {
+            addTaskModal.classList.add('active');
+            // Focus sur le champ de texte après l'animation
+            setTimeout(() => {
+                newTaskInput.focus();
+            }, 300);
+        }
+        
+        function closeModal() {
+            addTaskModal.classList.remove('active');
+            newTaskInput.value = '';
+        }
+        
+        function openRoomModal() {
+            addRoomModal.classList.add('active');
+            // Focus sur le champ de texte
+            setTimeout(() => {
+                newRoomInput.focus();
+            }, 300);
+        }
+        
+        function closeRoomModal() {
+            addRoomModal.classList.remove('active');
+            newRoomInput.value = '';
+        }
+        
+        function openAddLocationModal(editId = null) {
+            addLocationModal.classList.add('active');
+            
+            // Si mode édition, changer le titre
+            if (editId) {
+                addLocationModal.querySelector('.modal-title').innerHTML = '<span>🌍</span> Modifier le lieu';
+                saveLocationButton.setAttribute('data-edit-id', editId);
+            } else {
+                addLocationModal.querySelector('.modal-title').innerHTML = '<span>🌍</span> Ajouter un lieu';
+                saveLocationButton.removeAttribute('data-edit-id');
+            }
+            
+            // Focus sur le champ de texte
+            setTimeout(() => {
+                newLocationInput.focus();
+            }, 300);
+        }
+        
+        function closeAddLocationModal() {
+            addLocationModal.classList.remove('active');
+            newLocationInput.value = '';
+            saveLocationButton.removeAttribute('data-edit-id');
+        }
+        
+        function openManageLocationsModal() {
+            updateLocationsList();
+            manageLocationsModal.classList.add('active');
+        }
+        
+        function closeManageLocationsModal() {
+            manageLocationsModal.classList.remove('active');
+        }
+
+        // Sauvegarder l'état dans le stockage local
+        function saveState() {
+            try {
+                localStorage.setItem('peaceOfMindState', JSON.stringify(state));
+            } catch (e) {
+                console.log('Erreur lors de la sauvegarde des données:', e);
+            }
+        }
+
+        // Mise à jour du champ icône selon le texte de la tâche
+        newTaskInput.addEventListener('input', function() {
+            const text = this.value.trim().toLowerCase();
+            const suggestedEmoji = findAppropriateEmoji(text);
+            
+            // Sélectionner l'emoji suggéré dans la liste déroulante
+            if (suggestedEmoji) {
+                const options = Array.from(iconSelect.options);
+                const option = options.find(opt => opt.value === suggestedEmoji);
+                if (option) {
+                    iconSelect.value = suggestedEmoji;
+                }
+            }
+        });
+
+        // Initialiser l'application
+        function init() {
+            // Mettre à jour les sélecteurs de lieu
+            updateLocationSelectors();
+            
+            // Charger le lieu actuel
+            loadCurrentLocation();
+            
+            // Écouteurs d'événements pour les boutons principaux
+            addTaskButton.addEventListener('click', openModal);
+            
+            cancelAddTask.addEventListener('click', closeModal);
+            
+            saveTaskButton.addEventListener('click', addTask);
+            
+            resetButton.addEventListener('click', resetTasks);
+            
+            // Écouteurs pour l'ajout de pièces
+            cancelAddRoom.addEventListener('click', closeRoomModal);
+            
+            saveRoomButton.addEventListener('click', addRoom);
+            
+            // Écouteurs pour les lieux
+            locationSelect.addEventListener('change', changeLocation);
+            
+            addLocationButton.addEventListener('click', openManageLocationsModal);
+            
+            cancelAddLocation.addEventListener('click', closeAddLocationModal);
+            
+            saveLocationButton.addEventListener('click', function() {
+                const editId = this.getAttribute('data-edit-id');
+                addLocation(editId);
+            });
+            
+            addNewLocationBtn.addEventListener('click', function() {
+                closeManageLocationsModal();
+                openAddLocationModal();
+            });
+            
+            closeManageLocations.addEventListener('click', closeManageLocationsModal);
+            
+            // Support des touches du clavier
+            newTaskInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    addTask();
+                }
+            });
+            
+            newRoomInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    addRoom();
+                }
+            });
+            
+            newLocationInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    const editId = saveLocationButton.getAttribute('data-edit-id');
+                    addLocation(editId);
+                }
+            });
+            
+            // Fermer les modals en cliquant à l'extérieur
+            addTaskModal.addEventListener('click', function(event) {
+                if (event.target === addTaskModal) {
+                    closeModal();
+                }
+            });
+            
+            addRoomModal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeRoomModal();
+                }
+            });
+            
+            addLocationModal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeAddLocationModal();
+                }
+            });
+            
+            manageLocationsModal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeManageLocationsModal();
+                }
+            });
+            
+            // Ajouter les fonctions au scope global pour pouvoir les appeler depuis les attributs onclick
+            window.toggleTask = toggleTask;
+            window.deleteTask = deleteTask;
+            
+            // Prévenir le zoom sur mobile lors du double tap
+            document.addEventListener('touchend', function(event) {
+                const now = Date.now();
+                const DOUBLE_TAP_DELAY = 300;
+                if (lastTouchEnd && (now - lastTouchEnd) < DOUBLE_TAP_DELAY) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+        }
+        
+        // Variable pour prévenir le double tap
+        let lastTouchEnd = 0;
+        
+        // Animation pour le titre au démarrage
+        setTimeout(() => {
+            document.querySelector('h1').classList.add('title-animation');
+        }, 1000);
+        
+        // Lancer l'application
+        init();
+    </script>
+</body>
+</html>
